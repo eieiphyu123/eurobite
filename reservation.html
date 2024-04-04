@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroBite Bisto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/euroBitesLogo.jpg" type="image/x-icon">
+</head>
+<body>    
+    <!-- Start of Banner (logo, brandName, searchBtn, cart) -->
+    <div class="banner">
+        <div class="logoContainer">
+            <img src="images/euroBitesLogo.jpg" alt="euroBitesLogo" class="logo">
+            <p class="brandName">EuroBite Bisto</p>            
+        </div>
+        <div class="searchContainer">
+            <form class="search">
+                <label for="search">Search Menu:</label>
+                <input type="search" id="search" name="search">
+                <input type="submit" value="Search" class="btn1">
+            </form>
+            <img src="images/shoppingCart.png" alt="" class="shoppingCart">
+            <span class="cart">3</span>   
+        </div>               
+    </div>
+    <!-- End of banner (logo, brandName, searchBtn, cart) -->
+    <!-- Start of Welcome -->
+    <div class="welcome">
+        <h1>Welcome to EuroBite Bistro</h1>
+        <p>Essential European dining experience in the heart of the city!</p>
+        <button class="btn">Order Now</button>   
+    </div>
+    <!-- End of Welcome -->
+    <!-- Start of Navigation -->
+    <div class="nav">
+        <ul>
+            <li>
+                    <a href="index.html">Home</a><span class="shortLine">|</span>
+            </li>
+            <li>
+                    <a href="about.html">About EuroBite</a><span class="shortLine">|</span>
+            </li>
+            <li>
+                <a href="menu.html">
+                    <div  class="dropdown">
+                        <button class="dropbtn">Menu Marvels</button>
+                        <div class="dropdown-content">
+                            <a href="menu.html">Dessert</a>                            
+                            <a href="mainDish.html">Main Dish</a>
+                            <a href="drink.html">Drink</a>
+                            <a href="liquor.html">Liquor</a>
+                        </div>
+                    </div>
+                </a>               
+                <span class="shortLine">|</span>
+            </li>             
+           <li>
+                <a href="reservation.html">Reservation</a><span class="shortLine">|</span>
+            </li>
+            <li>
+                <a href="specialPromotion.html">Special Promotion</a><span class="shortLine">|</span>
+            </li>  
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>              
+        </ul>
+    </div>
+    <!-- End of Navigation -->
+    <!-- Start of Content -->
+    <div class="content">        
+        <div class="reservation">
+            <div>
+                <h1 class="title1">:: Why Should Reserve with Us? ::</h1> 
+                <p>
+                    <span style="font-style: italic; font-weight: bold;">It's a romantic dinner, a family celebration, or a casual gathering with friends.</span> <br><br>
+                    Reserving a table at EuroBite ensures a delightful experience. <br><br>
+                    <span class="reservTitle">Convenience:</span> <br>No need to wait in line. Book a table in seconds. <br><br>
+                    <span class="reservTitle">Personalized Experience: </span><br> Let us know your preferences, and we'll ensure your dining experience is tailored to your liking. <br><br>
+                    <span class="reservTitle">Guaranteed Seating:</span><br> Rest assured, your table will be ready when you arrive. <br><br>
+                    <span class="reservTitle">Online Booking:</span> <br>Use our user-friendly online reservation system. <br>
+                    Choose your date, time, and party size. It's quick and hassle-free. <br><br>                
+                    <span style="font-weight: bold; letter-spacing: 4px; background: #000; color: #ffffF0; font-style: italic; padding: 5PX;">We look forward to serving you soon!</span> <br><br>                           
+                    <span class="reservTitle">Call Us:</span> <br>   
+                    Give us a call at 09-976756456, 09-976756457. <br><br>
+                    <span class="reservTitle">Visit Us:</span> <br>No 365, 43 Block, PinLon Road, North Dagon                        
+                </p>     
+            </div>
+            <div>
+                <h1 class="title1">:: Reserve A Table ::</h1>           
+                <form action=" " method="get">
+                    <label for="name" class="reservTitle">Name:</label>
+                    <input type="text" name="customerName" id="name">
+                    <br><br>                 
+                    <label for="phone" class="reservTitle">Contact Number:</label>             
+                    <input type="number" name="customerPhone" id="phone">
+                    <br><br>
+                    <label for="email" class="reservTitle">Email:</label>
+                    <input type="email" name="customerEmail" id="email">
+                    <br><br>                   
+                    <label for="promoCode" class="reservTitle">Promotion Code</label>
+                    <input type="file" name="promoCode" accept=".png,.jpg" id="promoCode">
+                    <br><br>
+                    <label for="guestNO" class="reservTitle">Number of Guest:</label>
+                    <input type="number" name="guestNo" id="guestNo">
+                    <br><br>                                    
+                    <label for="reserveDate" class="reservTitle">Choose Date and Time for Reservation:</label>
+                    <br>
+                    <input type="date" name="reserveDate" id="date">
+                    <input type="time" name="reserveTime" id="time">
+                    <br><br>
+                    <label for="" class="reservTitle">Type of Table (VIP, Family, Regular)</label><br>
+                    <input type="radio" name="roomTpye" id="vip" value="vip">
+                    <label for="type" >Vip Room</label>
+                    <input type="radio" name="roomTpye" id="family" value="family">
+                    <label for="type">Family Room</label>
+                    <input type="radio" name="roomTpye" id="regular" value="regular">
+                    <label for="type">Regular Place</label>
+                    <br><br>                    
+                    <label for="product-type"><span  class="reservTitle"> Monthly's Special Offer</span>
+                    <br><span style="font-weight: bold;"> (Choose some if you want to preorder.)</span></label>
+                    <br>
+                    <select name="product" id="product-type">
+                        <option value="">Pork German</option>
+                        <option value="1">Fish Fillet</option>
+                        <option value="2">Golden Elixir Whiskey</option>
+                        <option value="3">Seafood Salad</option>
+                        <option value="4">Marvel Madness</option>
+                        <option value="4">Chicken Vegetables</option>
+                        <option value="4">Mushroom Chicken</option>
+                        <option value="4">Baked Artichokes</option>
+                        <option value="">Scotch Whisky</option>
+                        <option value="1">Irish Whiskey</option>
+                        <option value="2">Polish Vodka</option>
+                        <option value="3">Swedish Vodka</option>
+                        <option value="4">Caribbean Rum</option>
+                        <option value="4">White Rum</option>
+                        <option value="4">Calvados Brandy</option>
+                        <option value="4">Old Tom Gin</option>
+                    </select>
+                    <br><br>
+                    
+                    <label for="" class="reservTitle">We will contact you back by</label><br>
+                    <input type="radio" name="contact-type" id="phone" value="phone">
+                    <label for="type">Phone</label>
+                    <input type="radio" name="contact-type" id="email" value="email">
+                    <label for="type">Email</label>
+                    <br><br>
+                    <!-- inquiry form submit button. -->
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>       
+        </div>        
+    </div>
+    <!-- end of content --><!-- Start of Footer -->
+    <div class="footer">        
+        <div class="footerNav">
+            <ul>
+                <li>
+                    <img src="images/facebook.png" alt="">
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <img src="images/youtube.png" alt="">
+                    <a href="#">YouTube</a>
+                </li>
+                <li>
+                    <img src="images/instagram.png" alt="">
+                    <a href="#">Instagram</a>
+                </li>                
+                            
+            </ul>
+        </div>
+        <p class="copyright">Copyright @ 2023~2024.Design by Ei Ei.</p>
+    </div>    
+    <!--End of Footer  -->
+</body>
+</html>

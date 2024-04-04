@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroBite Bisto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/euroBitesLogo.jpg" type="image/x-icon">
+</head>
+<body>    
+    <!-- Start of Banner (logo, brandName, searchBtn, cart) -->
+    <div class="banner">
+        <div class="logoContainer">
+            <img src="images/euroBitesLogo.jpg" alt="euroBitesLogo" class="logo">
+            <p class="brandName">EuroBite Bisto</p>            
+        </div>
+        <div class="searchContainer">
+            <form class="search">
+                <label for="search">Search Menu:</label>
+                <input type="search" id="search" name="search">
+                <input type="submit" value="Search" class="btn1">
+            </form>
+            <img src="images/shoppingCart.png" alt="" class="shoppingCart">
+            <span class="cart">3</span>   
+        </div>               
+    </div>
+    <!-- End of banner (logo, brandName, searchBtn, cart) -->
+    <!-- Start of Welcome -->
+    <div class="welcome">
+        <h1>Welcome to EuroBite Bistro</h1>
+        <p>Essential European dining experience in the heart of the city!</p>
+        <button class="btn">Order Now</button>   
+    </div>
+    <!-- End of Welcome --> 
+    <!-- Start of Navigation -->
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="index.html">Home</a><span class="shortLine">|</span>
+            </li>
+            <li>
+                <a href="about.html">About EuroBite</a><span class="shortLine">|</span>
+            </li>
+            <li>
+                <a href="menu.html">
+                    <div  class="dropdown">
+                        <button class="dropbtn">Menu Marvels</button>
+                        <div class="dropdown-content">
+                            <a href="menu.html">Dessert</a>                            
+                            <a href="mainDish.html">Main Dish</a>
+                            <a href="drink.html">Drink</a>
+                            <a href="liquor.html">Liquor</a>
+                        </div>
+                    </div>
+                </a>               
+                <span class="shortLine">|</span>
+            </li>             
+            <li>
+                <a href="reservation.html">Reservation</a><span class="shortLine">|</span>
+            </li>
+            <li>
+                <a href="specialPromotion.html">Special Promotion</a><span class="shortLine">|</span>
+            </li>  
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>              
+        </ul>
+    </div>
+    <!-- End of Navigation -->
+    <!-- Start of Content -->
+    <div class="content">            
+        <!-- start of beseller -->
+        <h3 class="title1">Check Out</h3>            
+        <div class="bestSeller">                
+            <table border="1" cellpadding="10" cellspacing="0" style="border-color: #f2f2f2;"> 
+                <thead>
+                    <tr>
+                        <td>No</td>
+                        <td>Name</td>
+                        <td>Qty</td>
+                        <td>Price</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>            
+        </div>
+        <!-- end of bestseller -->   
+    </div>
+    <!-- end of content -->
+
+    <!-- Start of Jquery -->
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Start of Footer -->
+    <div class="footer">        
+        <div class="footerNav">
+            <ul>
+                <li>
+                    <img src="images/facebook.png" alt="">
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <img src="images/youtube.png" alt="">
+                    <a href="#">YouTube</a>
+                </li>
+                <li>
+                    <img src="images/instagram.png" alt="">
+                    <a href="#">Instagram</a>
+                </li>                
+                            
+            </ul>
+        </div>
+        <p class="copyright">Copyright @ 2023~2024.Design by Ei Ei.</p>
+    </div>    
+     <!--End of Footer  -->
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start of Student Form -->
+    <div id="addStudent">
+        <h3>Add New Student</h3>
+        
+            <label for="">Name : </label><input type="text" id="name" name="name"><br><br>
+            <label for="">Email : </label><input type="email" id="email" name="email"><br><br>
+            <label for="">Phone : </label><input type="number" id="phone" name="phone"><br><br>
+            <label for="">Year: </label>
+            <select name="year" id="year">
+                <option value="First Year">First Year</option>
+                <option value="Second Year">Second Year</option>
+                <option value="Third Year">Third Year</option>
+            </select><br><br>
+            <button id="add">Add Student</button>
+        
+    </div>   
+    <!-- End of Student Form -->
+
+    <!-- Start of Student List  -->
+    <h3>Student List</h3>
+    <table border="1" cellpadding="20" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Year</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+    </table>
+    <!-- End of Student List -->
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            let data='';
+            let i=1;            
+            // C-create
+            // R-read
+            // U-update
+            // D-delete
+            // COOKIE -4KB
+            // SESSION - 5 mb LOGIN logout တွေမှာသုံး  - tab ၁ခုမှာပဲ လုပ်
+            // LOCAL STORAGE -10mb 
+            // localStorage.getItem('myStudent'); string ပဲံသိမ်းလို့ရ
+            // localStorage.setItem('myStudent',data);
+
+            $('#add').click(function(){
+                let name=$('#name').val();
+                let email=$('#email').val();
+                let phone=$('#phone').val();
+                let year=$('#year').val();
+
+
+                
+                // console.log(name,phone,email,year);
+
+                let student_obj={
+                    stu_name:name,
+                    stu_email:email,
+                    stu_phone:phone,
+                    stu_year:year,
+                };
+                let stuString=localStorage.getItem('myStudents');//localstorge ထဲကို ထည့်ဖို့ data ဖမ်း mystudents က ကြိုက်တာပေး
+                let stuArray;
+                if(stuString==null){
+                    stuArray=[];
+                }else{
+                    stuArray=JSON.parse(stuString);//String to JSOn Array; string ပြောင်းပြီး array ထဲထည့်
+                }
+                // console.log(stuArray);
+                stuArray.push(student_obj);//push to array object ထဲထည့်
+
+                let stuData=JSON.stringify(stuArray);//Json Arry to string 
+                localStorage.setItem('myStudents',stuData);//set data to local storage
+
+                                
+
+                // ${ }သည် ဖမ်းထားတဲ့ variable ကို ပြန်ခေါ် သုံး သည်
+                // data += `<tr>
+                //         <td>${i++}</td>
+                //         <td>${name}</td>
+                //         <td>${email}</td>
+                //         <td>${phone}</td>
+                //         <td>${year}</td>
+                //         <td>
+                //         <button>Edit</button>
+                //         <button>Delete</button>
+                //         </td>
+                //     </tr>`;
+                // console.log(data);
+                // id tbody ထဲကို HTML DATA တွေ ထည့်
+                    // $('#tbody').html(data);
+                    // input မှာ data တွေကို clear လုပ်
+                    $('#name').val('');
+                    $('#email').val('');
+                    $('#phone').val('');
+                    $('#year').val('');
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuroBite Bisto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/euroBitesLogo.jpg" type="image/x-icon">
+</head>
+<body>    
+    <!-- Start of Banner (logo, brandName, searchBtn, cart) -->
+    <div class="banner">
+        <div class="logoContainer">
+            <img src="images/euroBitesLogo.jpg" alt="euroBitesLogo" class="logo">
+            <p class="brandName">EuroBite Bisto</p>            
+        </div>
+        <div class="searchContainer">
+            <form class="search">
+                <label for="search">Search Menu:</label>
+                <input type="search" id="search" name="search">
+                <input type="submit" value="Search" class="btn1">
+            </form>
+            <div id="order">
+                <img src="images/shoppingCart.png" alt="" class="shoppingCart">
+                <span class="cart" id="count_item"> </span>
+            </div>
+        </div>               
+    </div>
+    <!-- End of banner (logo, brandName, searchBtn, cart) -->
+    <!-- Start of Welcome -->
+    <div class="welcome">
+        <h1>Welcome to EuroBite Bistro</h1>
+        <p>Essential European dining experience in the heart of the city!</p>
+        <button class="btn">Order Now</button>   
+    </div>
+    <!-- End of Welcome --> 
+    <!-- Start of Navigation -->
+    <div class="nav">
+        <ul>
+            <li>
+                <a href="index.html">Home</a><span class="shortLine">|</span>
+            </li>
+            <li>
+                <a href="about.html">About EuroBite</a><span class="shortLine">|</span>
+            </li>
+            <li>
+                <a href="menu.html">
+                    <div  class="dropdown">
+                        <button class="dropbtn">Menu Marvels</button>
+                        <div class="dropdown-content">
+                            <a href="menu.html">Dessert</a>                            
+                            <a href="mainDish.html">Main Dish</a>
+                            <a href="drink.html">Drink</a>
+                            <a href="liquor.html">Liquor</a>
+                        </div>
+                    </div>
+                </a>               
+                <span class="shortLine">|</span>
+            </li>             
+            <li>
+                <a href="reservation.html">Reservation</a><span class="shortLine">|</span>
+            </li>
+            <li>
+                <a href="specialPromotion.html">Special Promotion</a><span class="shortLine">|</span>
+            </li>  
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>              
+        </ul>
+    </div>
+    <!-- End of Navigation -->
+    <!-- Start of Content -->
+    <div class="content">            
+        <!-- start of beseller -->
+        <h3 class="title1">Featured Dishes - Best Seller</h3>            
+        <div class="bestSeller">                
+                <div id>
+                    <img src="images/porkHockGerman.jpg" alt="">
+                    <p>Pork German</p>
+                    <p class="price">14000Ks</p>
+                    <button class="btn addToCart" data-id="1" data-name="Pork German" data-price="140000">Add to Cart</button>
+                </div>
+                <div>
+                    <img src="images/fishfillet.jpg" alt="">
+                    <p>Fish Fillet</p>
+                    <p class="price">18000 Ks</p>
+                    <button class="btn addToCart" data-id="2" data-name="Fish Fillet" data-price="18000">Add to Cart</button>
+                </div>
+                <div>
+                    <img src="images/golden.jpg" alt="">
+                    <p>Golden Elixir Whiskey</p>
+                    <p class="price">56000 Ks</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div>
+                    <img src="images/marvelMadness.jpg" alt="">
+                    <p>Marvel Madness</p>
+                    <p class="price">8500 Ks</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div>
+                    <img src="images/chickenVegetables.jpg" alt="">
+                    <p>Chicken Vegetables</p>
+                    <p class="price"><span>12000</span> 9900Ks</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div>
+                    <img src="images/bakedArtichokes.jpg" alt="">
+                    <p>Baked Artichokes</p>
+                    <p class="price">50000Ks </p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div>
+                    <img src="images/mushroomChicken.jpg" alt="">
+                    <p>Mushroom Chicken</p>
+                    <p class="price"><span>15000</span> 11000Ks </p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div>
+                    <img src="images/seafoodSalad.jpg" alt="">
+                    <p>Seafood Salad</p>
+                    <p class="price">9500Ks</p>
+                    <button class="btn">Add to Cart</button>
+                </div>                
+                <div>
+                    <img src="images/blackForestCake.jpg" alt="">
+                    <p>Black Cake</p>
+                    <p class="price">7500Ks</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div>
+                    <img src="images/blue.jpg" alt="">
+                    <p>Blue Lagoon Whiskey</p>
+                    <p class="price">7500Ks</p>
+                    <button class="btn">Add to Cart</button>
+                </div>               
+        </div>
+        <!-- end of bestseller -->
+        <!-- Start of enjoy section -->
+        <div class="enjoyContainer">
+            <div  class="euroPic">
+                <img src="images/euroBiteImg1.jpg" alt="EuroBite Bistro">
+            </div>            
+            <div class="eurobiteBrief">
+                <p>
+                    <h3 class="reservTitle">Best European Style Restaurnt</h3>
+                    At EuroBite Bistro, we believe that great food is best enjoyed in great company. Our warm and inviting atmosphere is the perfect backdrop for any occasion <br><a href="about.html">Find Out More >> <br><br></a>
+                </p>
+                <P>
+                    <h3 class="reservTitle">Save Time</h3>
+                    Nestled in the charming cobblestone streets, Le Petit Bistro brings the rich flavors and warm hospitality of Europe right to your table. With a commitment to culinary excellence and a passion for creating memorable moments, we invite you to embark on a culinary journey that celebrates the diverse tastes of the continent. <br><a href="reservation.html">Preorder Online >> <br><br></a>
+                </P>
+                <P>
+                    <h3 class="reservTitle">Variey of Choice</h3>
+                    Join us at Le Petit Bistro and savor the essence of Europe without leaving the city. Whether you're a connoisseur of fine dining or simply seeking a taste of something extraordinary, we look forward to welcoming you to our table. <br><a href="menu.html">Dishes Menu >> <br><br></a>
+                </P>                    
+            </div>
+        </div>
+        <!-- End of Enjoy section -->        
+    </div>
+    <!-- end of content -->
+
+    <!-- Start of Jquery -->
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Start of Footer -->
+    <div class="footer">        
+        <div class="footerNav">
+            <ul>
+                <li>
+                    <img src="images/facebook.png" alt="">
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <img src="images/youtube.png" alt="">
+                    <a href="#">YouTube</a>
+                </li>
+                <li>
+                    <img src="images/instagram.png" alt="">
+                    <a href="#">Instagram</a>
+                </li>                
+                            
+            </ul>
+        </div>
+        <p class="copyright">Copyright @ 2023~2024.Design by Ei Ei.</p>
+    </div>    
+     <!--End of Footer  -->
+    
+</body>
+</html>
